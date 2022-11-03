@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>UTS_Pemrograman WEB</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="./ambilapi.js"></script>
+</head>
+<body>
+<!--Membuat Navbar dengan bootstrap-->
+<div class="m-4">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">
+                <img src="./gambar/covidlogo.png" height="45" alt="CoolBrand">
+            </a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                <div class="navbar-nav">
+                    <a href="./index.html" class="nav-item nav-link active">Beranda</a>
+                    <a href="./informasi.html" class="nav-item nav-link active">Informasi</a>
+                    <a href="./publikasi.html" class="nav-item nav-link active">Publikasi</a>
+                </div>
+                <form class="d-flex">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                        <button type="button" class="btn btn-secondary"><i class="bi-search"></i></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!--Membuat Banner-->
+    <div class="card">
+      <h2>Jaga orang terdekatmu dengan selalu update informasi mengenai COVID-19</h2>
+      <p>Website ini merupakan project UTS yang dibuat dengan menggunakan website kawalcovid19.id sebagai referensi.</p>
+    </div>
+
+    <!-- Membuat konten dengan bootstrap yang akan di fetch API-->
+    <div class="konten">
+        <h3>Informasi jumlah kasus Covid-19 di Indonesia saat ini</h3>
+        <div class="row">
+            <div class="col-6">
+                <div class="card text-white bg-primary mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Terkonfirmasi</h5>
+                        <p id="terkonfirmasi"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="card text-white bg-secondary mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Dalam Perawatan</h5>
+                        <p id="dirawat"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="card text-white bg-success mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Sembuh</h5>
+                        <p id="sembuh"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="card text-white bg-danger mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Meninggal</h5>
+                        <p id="meninggal"></p>
+                    </div>
+                </div>
+            </div>
+
+     <!--Membuat Footer dengan bootstrap-->
+     <div class="row row-cols-1 row-cols-md-3 g-3">
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Tentang Kami</h5>
+                    <p class="card-text">kawalcovid19.id merupakan sebuah situs sumber informasi inisiatif sukarela warganet Indonesia pro-data, terdiri dari praktisi kesehatan, akademisi & profesional.</p>
+                    <a href="#" class="btn btn-primary">Tahu lebih lanjut</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Tentang Kami</h5>
+                    <p class="card-text">kawalcovid19.id merupakan sebuah situs sumber informasi inisiatif sukarela warganet Indonesia pro-data, terdiri dari praktisi kesehatan, akademisi & profesional.</p>
+                    <a href="#" class="btn btn-primary">Tahu lebih lanjut</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Tentang Kami</h5>
+                    <p class="card-text">kawalcovid19.id merupakan sebuah situs sumber informasi inisiatif sukarela warganet Indonesia pro-data, terdiri dari praktisi kesehatan, akademisi & profesional.</p>
+                    <a href="#" class="btn btn-primary">Tahu lebih lanjut</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!--Membuat tanda Copyright-->
+    <div class="copyright">
+        <div class="wrapper">
+            &copy; 2022. <b>I Made Ari Prayoga_<b> 2001020018_<b>IF Pagi</b> .
+        </div>
+    </div>
+</body>
+</html>
